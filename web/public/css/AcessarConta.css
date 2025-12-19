@@ -1,0 +1,79 @@
+body{
+    background-color: #DBDBDB;
+}
+#nav{
+    background-color: #424242;
+}
+#acesse{
+    background-color: #ffffff;
+    width: 500px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding:30px;
+    box-shadow: 0px 0px 30px 1px #42424262;
+}
+#up{
+    color: #056ef8;
+}
+.input-box .input {
+    margin-top: 15px;
+    font-size: 16px;
+    outline: none;
+    padding: 10px 15px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    border: 2px solid #999;
+    background: transparent;
+}
+
+.input-box .input:focus,
+.input-box .input:valid {
+    border-color: #3679ff;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box .label {
+    color: #999;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    top: 12px;
+    display: flex;
+}
+
+.input-box .char {
+    transition: .2s ease all;
+    transition-delay: calc(var(--index) * .05s);
+}
+
+.input-box .input:focus~label .char,
+.input-box .input:valid~label .char {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #3679ff;
+    background: #ffffff;
+}
+
+.b{
+    width: 100%;
+    margin-top: 10px;
+    background-color: #0700E0;
+    color: #ffffff;
+    text-decoration:none;
+    border: 1px solid #0700E0;
+}
+.b:hover{
+    width: 100%;
+    margin-top: 10px;
+    background-color: #0066ff;
+    color: #ffffff;
+    border: 1px solid #0066ff;
+}

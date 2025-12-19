@@ -1,0 +1,88 @@
+/* ===== Configurações gerais ===== */
+body {
+    background-color: #DBDBDB;
+}
+
+#nav {
+    background-color: #424242;
+}
+#up{
+    color: #056ef8;
+}
+#acesse {
+    background-color: #ffffff;
+    width: 500px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 30px;
+    box-shadow: 0px 0px 30px 1px #42424262;
+}
+
+/* ===== Inputs ===== */
+.input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.input-box .input {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 15px;
+    border: 2px solid #999;
+    border-radius: 7px;
+    background: transparent;
+    outline: none;
+    transition: border-color .3s ease;
+}
+
+/* Quando o input está focado */
+.input-box .input:focus {
+    border-color: #3679ff;
+}
+
+/* ===== Label animado ===== */
+.input-box .label {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    font-size: 16px;
+    color: #999;
+    display: flex;
+    pointer-events: none;
+}
+
+/* Animação das letras individualmente */
+.input-box .char {
+    transition: .25s ease;
+    transition-delay: calc(var(--index) * .05s);
+}
+
+/* Quando o input está focado ou com conteúdo */
+.input-box .input:focus ~ .label .char,
+.input-box .input:not(:placeholder-shown) ~ .label .char {
+    transform: translateY(-22px);
+    font-size: 14px;
+    color: #3679ff;
+    background: #ffffff;
+    padding: 0 2px;
+}
+
+/* ===== Botão ===== */
+.b {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #0700E0;
+    color: #ffffff;
+    border: 1px solid #0700E0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.b:hover {
+    background-color: #0066ff;
+    border-color: #0066ff;
+}
